@@ -56,6 +56,8 @@ $user = $stmt->fetch();
     <?php if (!empty($user['profile'])): ?>
         <h3>👁️ Preview</h3>
         <img src="<?= htmlspecialchars($user['profile']) ?>" width="150" style="border-radius: 8px;">
+        <br><br>
+        <a href="<?= htmlspecialchars($user['profile']) ?>" download>📥 Download</a>
     <?php endif; ?>
 </body>
 </html>
