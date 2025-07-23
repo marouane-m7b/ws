@@ -7,11 +7,11 @@ function validateEmail($email) {
 }
 
 function validateUsername($username) {
-    return preg_match('/^[a-zA-Z0-9_]{3,20}$/', $username); // Letters, numbers, underscores; 3–20 chars
+    return preg_match('/^[a-zA-Z0-9_]{3,20}$/', $username);
 }
 
 function validatePassword($password) {
-    return strlen($password) >= 6; // Minimum 6 characters
+    return strlen($password) >= 6;
 }
 
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
